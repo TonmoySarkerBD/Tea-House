@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
     <!-- Tailwind CDN -->
-     
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <!-- Google Font CDN -->
 
@@ -27,19 +27,120 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body class="space-y-4 container">
-    <h1 class="text-3xl font-bold underline text-center h-24 bg-slate-300">
-        Hello world!
-    </h1>
+    <!-- Main Section -->
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+        <!-- header section -->
+        <header class="lg:flex pt-10 mb-20">
+            <!-- Text content -->
+            <div>
+              <h1 class="text-5xl md:text-7xl">
+                It's good <br />
+                tea time at The <br />
+                Tea House
+              </h1>
+              <br />
+              <p class="text-gray-500 w-3/4">
+                Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+                Your Taste Buds.
+              </p>
+              <br />
+              <button
+                class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold"
+              >
+                Explore More
+                <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
+              </button>
+            </div>
+            <!-- Image Content -->
+            <div class="relative">
+              <!-- Image -->
+              <div>
+                <img class="w-full" src="./images/banner.png" alt="" />
+              </div>
+              <!-- Card -->
+              <div
+                class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 md:top-80 md:left-32 lg:left-28"
+              >
+                <!-- icon -->
+                <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+                <!-- Text -->
+                <div class="ml-2">
+                  <h2 class="lg:text-2xl font-bold">5.00</h2>
+                  <p class="text-gray-500">Trust Pilot Ratings</p>
+                </div>
+              </div>
+            </div>
+          </header>
 
-    <div class="h24 bg-slate-300">NavBar</div>
-    <div class="h24 bg-slate-300">Banner</div>
-    <div class="h24 bg-slate-300">Feature</div>
-    <div class="h24 bg-slate-300">Footer</div>
+                <!-- Featured Products Section -->
+      <section class="py-8 lg:py-24">
+        <!-- Title -->
+        <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold mb-5">
+            Our Featured Products
+          </h1>
+          <p class="text-gray-600 max-w-xl mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <!-- Grid Cards -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center"
+        >
+          <!-- Product Card -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="./images/tea-1.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Milk Tea</h2>
+              <p class="text-gray-600">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <!-- Product Card -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="./images/tea-2.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Black Tea</h2>
+              <p class="text-gray-600">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <!-- Product Card -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="./images/tea-3.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Green Tea</h2>
+              <p class="text-gray-600">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <!-- Product Card -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="./images/tea-4.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Lemon Tea</h2>
+              <p class="text-gray-600">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
 </body>
 
 </html>
